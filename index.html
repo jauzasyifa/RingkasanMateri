@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #f4f7fe;
+            background-color: #87CEEB;
             color: #2b3674;
             display: flex;
             flex-direction: column;
@@ -184,7 +184,7 @@
                 <label for="materiInput">Tempelkan Teks Catatan / Bab Pelajaran Kamu:</label>
                 <textarea id="materiInput" placeholder="Contoh: Fotosintesis adalah proses pembuatan makanan oleh tumbuhan hijau menggunakan energi cahaya matahari..."></textarea>
             </div>
-            <button class="btn-primary" onclick="prosesRingkasan()">⚡ Buat Ringkasan Otomatis</button>
+            <button class="btn-primary" onclick="prosesRingkasan()">Buat Ringkasan</button>
         </div>
 
         <!-- Section Hasil Ringkasan -->
@@ -227,7 +227,7 @@
             const kataKunci = document.getElementById('kataKunci');
 
             if (teks === '') {
-                alert('Tolong masukkan atau tempelkan teks materi pelajaranmu dulu ya!');
+                alert('Tolong masukkan atau tempelkan materi pelajaranmu dulu ya!');
                 return;
             }
 
